@@ -1,0 +1,5060 @@
+[
+  {
+    "Simulation Variable": "AUTOPILOT PITCH HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT AMBIENT WIND",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LAUNCHBAR POSITION",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NUMBER OF CATAPULTS",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HOLDBACK BAR INSTALLED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BLAST SHIELD POSITION",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG DETONATING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG CYLINDER HEALTH",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG NUM CYLINDERS",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RECIP ENG NUM CYLINDERS FAILED",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RECIP ENG ANTIDETONATION TANK VALVE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG ANTIDETONATION TANK QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG ANTIDETONATION TANK MAX QUANTITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG NITROUS TANK VALVE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG NITROUS TANK QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG NITROUS TANK MAX QUANTITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PAYLOAD STATION OBJECT",
+    "Unit": "String",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PAYLOAD STATION NUM SIMOBJECTS",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SLING OBJECT ATTACHED",
+    "Unit": "Bool/String",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SLING CABLE BROKEN",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SLING CABLE EXTENDED LENGTH",
+    "Unit": "Feet",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SLING ACTIVE PAYLOAD STATION",
+    "Unit": "Number",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SLING HOIST PERCENT DEPLOYED",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SLING HOOK IN PICKUP MODE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "IS ATTACHED TO SLING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ALTERNATE STATIC SOURCE OPEN",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON TRIM PCT",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER TRIM PCT",
+    "Unit": "Percent over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT ON STATES",
+    "Unit": "Mask",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT STATES",
+    "Unit": "Mask",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LANDING LIGHT PBH",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT TAXI ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT STROBE ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT PANEL ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT RECOGNITION ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT WING ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT LOGO ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT CABIN ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT HEAD ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT BRAKE ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT NAV ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT BEACON ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT LANDING ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI DESIRED SPEED",
+    "Unit": "Knots",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI WAYPOINT LIST",
+    "Unit": "SIMCONNECT_DATA_WAYPOINT",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI CURRENT WAYPOINT",
+    "Unit": "Number",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI DESIRED HEADING",
+    "Unit": "Degrees",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI GROUNDTURNTIME",
+    "Unit": "Seconds",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI GROUNDCRUISESPEED",
+    "Unit": "Knots",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI GROUNDTURNSPEED",
+    "Unit": "Knots",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC ISIFR",
+    "Unit": "Boolean",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC STATE",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC CURRENT AIRPORT",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC ASSIGNED RUNWAY",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC ASSIGNED PARKING",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC FROMAIRPORT",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC TOAIRPORT",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC ETD",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AI TRAFFIC ETA",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DROPPABLE OBJECTS TYPE",
+    "Unit": "String",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "DROPPABLE OBJECTS COUNT",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "WING FLEX PCT",
+    "Unit": "Percent over 100",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "APPLY HEAT TO SYSTEMS",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ADF LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV VOR LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV GS LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV DME LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "INNER MARKER LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MIDDLE MARKER LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "OUTER MARKER LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT LATLONALT",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT LATLONALTPBH",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT SURFACE RELATIVE VELOCITY",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT WORLDVELOCITY",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT WORLD ROTATION VELOCITY",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT BODY VELOCITY",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT BODY ROTATION VELOCITY",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT WORLD ACCELERATION",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT ENGINE POSITION",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "STRUCT EYEPOINT DYNAMIC ANGLE",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCT EYEPOINT DYNAMIC OFFSET",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EYEPOINT POSITION",
+    "Unit": "SIMCONNECT_DATA_XYZ",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLY BY WIRE ELAC SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLY BY WIRE FAC SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLY BY WIRE SEC SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLY BY WIRE ELAC FAILED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLY BY WIRE FAC FAILED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLY BY WIRE SEC FAILED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NUMBER OF ENGINES",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ENGINE CONTROL SELECT",
+    "Unit": "Mask",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "THROTTLE LOWER LIMIT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ENGINE TYPE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MASTER IGNITION SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GENERAL ENG COMBUSTION",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG MASTER ALTERNATOR",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG FUEL PUMP SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG FUEL PUMP ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG PCT MAX RPM",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG MAX REACHED RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG THROTTLE LEVER POSITION",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG MIXTURE LEVER POSITION",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG PROPELLER LEVER POSITION",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG STARTER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG EXHAUST GAS TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG OIL PRESSURE",
+    "Unit": "Psi",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG OIL LEAKED PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG COMBUSTION SOUND PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG DAMAGE PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG OIL TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG FAILED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG GENERATOR SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG GENERATOR ACTIVE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG ANTI ICE POSITION",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG FUEL VALVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG FUEL PRESSURE",
+    "Unit": "Psi",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GENERAL ENG ELAPSED TIME",
+    "Unit": "Hours",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG COWL FLAP POSITION",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG PRIMER",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG MANIFOLD PRESSURE",
+    "Unit": "Psi",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG ALTERNATE AIR POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG COOLANT RESERVOIR PERCENT",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG LEFT MAGNETO",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG RIGHT MAGNETO",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG BRAKE POWER",
+    "Unit": "ft lb per second",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG STARTER TORQUE",
+    "Unit": "Foot pound",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG TURBOCHARGER FAILED",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG EMERGENCY BOOST ACTIVE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG EMERGENCY BOOST ELAPSED TIME",
+    "Unit": "Hours",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG WASTEGATE POSITION",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG TURBINE INLET TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG CYLINDER HEAD TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG RADIATOR TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG FUEL AVAILABLE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG FUEL FLOW",
+    "Unit": "Pounds per hour",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG FUEL TANK SELECTOR",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG FUEL TANKS USED",
+    "Unit": "Mask",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP ENG FUEL NUMBER TANKS USED",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP CARBURETOR TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "RECIP MIXTURE RATIO",
+    "Unit": "Ratio",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG N1",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG N2",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG CORRECTED N1",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG CORRECTED N2",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG CORRECTED FF",
+    "Unit": "Pounds per hour",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG MAX TORQUE PERCENT",
+    "Unit": "Percent",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG PRESSURE RATIO",
+    "Unit": "Ratio",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG ITT",
+    "Unit": "Rankine",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG AFTERBURNER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG JET THRUST",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG BLEED AIR",
+    "Unit": "Psi",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG TANK SELECTOR",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG TANKS USED",
+    "Unit": "Mask",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG NUM TANKS USED",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG FUEL FLOW PPH",
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG FUEL AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG REVERSE NOZZLE PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG VIBRATION",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG FAILED",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG RPM ANIMATION PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG ON FIRE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG FUEL FLOW BUG POSITION",
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP RPM",
+    "Unit": "Rpm",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP MAX RPM PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP THRUST",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP BETA",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP FEATHERING INHIBIT",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP FEATHERED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP SYNC DELTA LEVER",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP AUTO FEATHER ARMED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP FEATHER SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PANEL AUTO FEATHER SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP SYNC ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PROP DEICE SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG COMBUSTION",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ENG N1 RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG N2 RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG FUEL FLOW GPH",
+    "Unit": "",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG FUEL FLOW PPH",
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG TORQUE",
+    "Unit": "Foot pounds",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG ANTI ICE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG PRESSURE RATIO",
+    "Unit": "Ratio (0-16384)",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG EXHAUST GAS TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG EXHAUST GAS TEMPERATURE GES",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG CYLINDER HEAD TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG OIL TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG OIL PRESSURE",
+    "Unit": "pound-force per square inch",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG OIL QUANTITY",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG HYDRAULIC PRESSURE",
+    "Unit": "pound-force per square inch",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG HYDRAULIC QUANTITY",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG MANIFOLD PRESSURE",
+    "Unit": "inHg",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG VIBRATION",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG RPM SCALER",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG TURBINE TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG TORQUE PERCENT",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG FUEL PRESSURE",
+    "Unit": "PSI",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG ELECTRICAL LOAD",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG TRANSMISSION PRESSURE",
+    "Unit": "PSI",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG TRANSMISSION TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG ROTOR RPM",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ENG MAX RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GENERAL ENG STARTER ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GENERAL ENG FUEL USED SINCE START",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TURB ENG N1",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG N2",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG CORRECTED N1",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG CORRECTED N2",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG PRIMARY NOZZLE PERCENT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TURB ENG IGNITION SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TURB ENG MASTER STARTER SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER2 LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER3 LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT MAIN LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT AUX LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT TIP LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT MAIN LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT AUX LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT TIP LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK EXTERNAL1 LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK EXTERNAL2 LEVEL",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER2 CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER3 CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT MAIN CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT AUX CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT TIP CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT MAIN CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT AUX CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT TIP CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK EXTERNAL1 CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK EXTERNAL2 CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL LEFT CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL RIGHT CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER2 QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK CENTER3 QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT MAIN QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT AUX QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK LEFT TIP QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT MAIN QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT AUX QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK RIGHT TIP QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK EXTERNAL1 QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK EXTERNAL2 QUANTITY",
+    "Unit": "Gallons",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL LEFT QUANTITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL RIGHT QUANTITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TOTAL QUANTITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL WEIGHT PER GALLON",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TANK SELECTOR",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "FUEL CROSS FEED",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TOTAL CAPACITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL SELECTED QUANTITY PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL SELECTED QUANTITY",
+    "Unit": "Gallons",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL TOTAL QUANTITY WEIGHT",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NUM FUEL SELECTORS",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "UNLIMITED FUEL",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ESTIMATED FUEL FLOW",
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT STROBE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT PANEL",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT LANDING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT TAXI",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT BEACON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT NAV",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT LOGO",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT WING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT RECOGNITION",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LIGHT CABIN",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GROUND VELOCITY",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL WORLD VELOCITY",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VELOCITY BODY Z",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VELOCITY BODY X",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VELOCITY BODY Y",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VELOCITY WORLD Z",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VELOCITY WORLD X",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VELOCITY WORLD Y",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ACCELERATION WORLD X",
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ACCELERATION WORLD Y",
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ACCELERATION WORLD Z",
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ACCELERATION BODY X",
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ACCELERATION BODY Y",
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ACCELERATION BODY Z",
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTATION VELOCITY BODY X",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTATION VELOCITY BODY Y",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTATION VELOCITY BODY Z",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RELATIVE WIND VELOCITY BODY X",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RELATIVE WIND VELOCITY BODY Y",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RELATIVE WIND VELOCITY BODY Z",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE ALT ABOVE GROUND",
+    "Unit": "Feet",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE LATITUDE",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE LONGITUDE",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE ALTITUDE",
+    "Unit": "Feet",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE PITCH DEGREES",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE BANK DEGREES",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE HEADING DEGREES TRUE",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE HEADING DEGREES MAGNETIC",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MAGVAR",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GROUND ALTITUDE",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SURFACE TYPE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SIM ON GROUND",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "INCIDENCE ALPHA",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "INCIDENCE BETA",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRSPEED TRUE",
+    "Unit": "Knots",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRSPEED INDICATED",
+    "Unit": "Knots",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRSPEED TRUE CALIBRATE",
+    "Unit": "Degrees",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRSPEED BARBER POLE",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRSPEED MACH",
+    "Unit": "Mach",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VERTICAL SPEED",
+    "Unit": "Feet per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MACH MAX OPERATE",
+    "Unit": "Mach",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STALL WARNING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "OVERSPEED WARNING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BARBER POLE MACH",
+    "Unit": "Mach",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "INDICATED ALTITUDE",
+    "Unit": "Feet",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "KOHLSMAN SETTING MB",
+    "Unit": "Millibars",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "KOHLSMAN SETTING HG",
+    "Unit": "inHg",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATTITUDE INDICATOR PITCH DEGREES",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATTITUDE INDICATOR BANK DEGREES",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATTITUDE BARS POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATTITUDE CAGE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WISKEY COMPASS INDICATION DEGREES",
+    "Unit": "Degrees",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PLANE HEADING DEGREES GYRO",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HEADING INDICATOR",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GYRO DRIFT ERROR",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DELTA HEADING RATE",
+    "Unit": "Radians per second",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TURN COORDINATOR BALL",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ANGLE OF ATTACK INDICATOR",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RADIO HEIGHT",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL ADF",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL AIRSPEED",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL ALTIMETER",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL ATTITUDE",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL COMM",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL COMPASS",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL ELECTRICAL",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL AVIONICS",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL ENGINE",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL FUEL INDICATOR",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL HEADING",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL VERTICAL VELOCITY",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL TRANSPONDER",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL NAV",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL PITOT",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL TURN COORDINATOR",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PARTIAL PANEL VACUUM",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MAX G FORCE",
+    "Unit": "Gforce",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MIN G FORCE",
+    "Unit": "Gforce",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SUCTION PRESSURE",
+    "Unit": "inHg",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AVIONICS MASTER SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV SOUND",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "DME SOUND",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ADF SOUND",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "MARKER SOUND",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "COM TRANSMIT",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "COM RECIEVE ALL",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "COM ACTIVE FREQUENCY",
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "COM STANDBY FREQUENCY",
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "COM STATUS",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV ACTIVE FREQUENCY",
+    "Unit": "MHz",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV STANDBY FREQUENCY",
+    "Unit": "MHz",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV SIGNAL",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV HAS NAV",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV HAS LOCALIZER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV HAS DME",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV HAS GLIDE SLOPE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV BACK COURSE FLAGS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV MAGVAR",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV RADIAL",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV RADIAL ERROR",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV LOCALIZER",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV GLIDE SLOPE ERROR",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV CDI",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV GSI",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV TOFROM",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV GS FLAG",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV OBS",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV DME",
+    "Unit": "Nautical miles",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV DMESPEED",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF ACTIVE FREQUENCY",
+    "Unit": "Frequency ADF BCD32",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF STANDBY FREQUENCY",
+    "Unit": "Hz",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF RADIAL",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF SIGNAL",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TRANSPONDER CODE",
+    "Unit": "BCO16",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "MARKER BEACON STATE",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "INNER MARKER",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MIDDLE MARKER",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "OUTER MARKER",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV RAW GLIDE SLOPE",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF CARD",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI CDI NEEDLE",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI GSI NEEDLE",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI CDI NEEDLE VALID",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI GSI NEEDLE VALID",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI TF FLAGS",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI BEARING VALID",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI BEARING",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI HAS LOCALIZER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI SPEED",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI DISTANCE",
+    "Unit": "Nautical miles",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS POSITION LAT",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS POSITION LON",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS POSITION ALT",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS MAGVAR",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS ACTIVE FLIGHT PLAN",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS ACTIVE WAY POINT",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS ARRIVED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS DIRECTTO FLIGHTPLAN",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS GROUND SPEED",
+    "Unit": "Meters per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS GROUND TRUE HEADING",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS GROUND MAGNETIC TRACK",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS GROUND TRUE TRACK",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP DISTANCE",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP BEARING",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP TRUE BEARING",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP CROSS TRK",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP DESIRED TRACK",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP TRUE REQ HDG",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP VERTICAL SPEED",
+    "Unit": "Meters per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP TRACK ANGLE ERROR",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS ETE",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS ETA",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP NEXT LAT",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP NEXT LON",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP NEXT ALT",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP PREV VALID",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP PREV LAT",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP PREV LON",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP PREV ALT",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP ETE",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP ETA",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS COURSE TO STEER",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS FLIGHT PLAN WP INDEX",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS FLIGHT PLAN WP COUNT",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS ACTIVE WP LOCKED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS APPROACH LOADED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS IS APPROACH ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH MODE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH WP TYPE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH IS WP RUNWAY",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH SEGMENT TYPE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH APPROACH INDEX",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH APPROACH TYPE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH TRANSITION INDEX",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH IS FINAL",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH IS MISSED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH TIMEZONE DEVIATION",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH WP INDEX",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH WP COUNT",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS DRIVES NAV1",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "COM RECEIVE ALL",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "COM AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "COM TEST",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "TRANSPONDER AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ADF AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ADF FREQUENCY",
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF EXT FREQUENCY",
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ADF IDENT",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ADF NAME",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV IDENT",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV NAME",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV CODES",
+    "Unit": "Flags",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "NAV GLIDE SLOPE",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV RELATIVE BEARING TO STATION",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "SELECTED DME",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP NEXT ID",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS WP PREV ID",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS TARGET DISTANCE",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS TARGET ALTITUDE",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "YOKE Y POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "YOKE X POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER PEDAL POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVATOR POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVATOR TRIM POSITION",
+    "Unit": "Radians",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVATOR TRIM INDICATOR",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVATOR TRIM PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BRAKE LEFT POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BRAKE RIGHT POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BRAKE INDICATOR",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BRAKE PARKING POSITION",
+    "Unit": "Position",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BRAKE PARKING INDICATOR",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SPOILERS ARMED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SPOILERS HANDLE POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SPOILERS LEFT POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SPOILERS RIGHT POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLAPS HANDLE PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLAPS HANDLE INDEX",
+    "Unit": "Number",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLAPS NUM HANDLE POSITIONS",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TRAILING EDGE FLAPS LEFT PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TRAILING EDGE FLAPS RIGHT PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TRAILING EDGE FLAPS LEFT ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TRAILING EDGE FLAPS RIGHT ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LEADING EDGE FLAPS LEFT PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LEADING EDGE FLAPS RIGHT PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LEADING EDGE FLAPS LEFT ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LEADING EDGE FLAPS RIGHT ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS GEAR RETRACTABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS GEAR SKIS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS GEAR FLOATS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS GEAR SKIDS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS GEAR WHEELS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR HANDLE POSITION",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR HYDRAULIC PRESSURE",
+    "Unit": "psf",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TAILWHEEL LOCK ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR CENTER POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR LEFT POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR RIGHT POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR TAIL POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR AUX POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR POSITION",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GEAR ANIMATION POSITION",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "GEAR TOTAL PCT EXTENDED",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTO BRAKE SWITCH CB",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WATER RUDDER HANDLE POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVATOR DEFLECTION",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVATOR DEFLECTION PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WATER LEFT RUDDER EXTENDED",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WATER RIGHT RUDDER EXTENDED",
+    "Unit": "Percentage",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR CENTER STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR LEFT STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR RIGHT STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR AUX STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "WATER LEFT RUDDER STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WATER RIGHT RUDDER STEER ANGLE",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR CENTER STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR LEFT STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR RIGHT STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR AUX STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "WATER LEFT RUDDER STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WATER RIGHT RUDDER STEER ANGLE PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON LEFT DEFLECTION",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON LEFT DEFLECTION PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON RIGHT DEFLECTION",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON RIGHT DEFLECTION PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON AVERAGE DEFLECTION",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON TRIM",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AILERON TRIM PCT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER DEFLECTION",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER DEFLECTION PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER TRIM",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER TRIM PCT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLAPS AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR DAMAGE BY SPEED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR SPEED EXCEEDED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLAP DAMAGE BY SPEED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FLAP SPEED EXCEEDED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CENTER WHEEL RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LEFT WHEEL RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RIGHT WHEEL RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT MASTER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT NAV SELECTED",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT WING LEVELER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT NAV1 LOCK",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT HEADING LOCK",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT HEADING LOCK DIR",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT ALTITUDE LOCK",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT ALTITUDE LOCK VAR",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT ATTITUDE HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT GLIDESLOPE HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT PITCH HOLD REF",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT APPROACH HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT BACKCOURSE HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT VERTICAL HOLD VAR",
+    "Unit": "Feet/minute",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT FLIGHT DIRECTOR ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT FLIGHT DIRECTOR PITCH",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT FLIGHT DIRECTOR BANK",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT AIRSPEED HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT AIRSPEED HOLD VAR",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT MACH HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT MACH HOLD VAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT YAW DAMPER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT RPM HOLD VAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT THROTTLE ARM",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT TAKEOFF POWER ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOTHROTTLE ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT NAV1 LOCK",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT VERTICAL HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT RPM HOLD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTOPILOT MAX BANK",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WHEEL RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUX WHEEL RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WHEEL ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CENTER WHEEL ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LEFT WHEEL ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RIGHT WHEEL ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUX WHEEL ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR EMERGENCY HANDLE POSITION",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GEAR WARNING",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ANTISKID BRAKES ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RETRACT FLOAT SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RETRACT LEFT FLOAT EXTENDED",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RETRACT RIGHT FLOAT EXTENDED",
+    "Unit": "Percent",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STEER INPUT CONTROL",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT DENSITY",
+    "Unit": "Slugs per cubic feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT PRESSURE",
+    "Unit": "inHg",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT WIND VELOCITY",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT WIND DIRECTION",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT WIND X",
+    "Unit": "Meters per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT WIND Y",
+    "Unit": "Meters per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT WIND Z",
+    "Unit": "Meters per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT PRECIP STATE",
+    "Unit": "Mask",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRCRAFT WIND X",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRCRAFT WIND Y",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRCRAFT WIND Z",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BAROMETER PRESSURE",
+    "Unit": "Millibars",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SEA LEVEL PRESSURE",
+    "Unit": "Millibars",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL AIR TEMPERATURE",
+    "Unit": "Celsius",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WINDSHIELD RAIN EFFECT AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT IN CLOUD",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AMBIENT VISIBILITY",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STANDARD ATM TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR BRAKE HANDLE POS",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR BRAKE ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR CLUTCH SWITCH POS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR CLUTCH ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR TEMPERATURE",
+    "Unit": "Rankine",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR CHIP DETECTED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR GOV SWITCH POS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR GOV ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR LATERAL TRIM PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR RPM PCT",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SMOKE ENABLE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SMOKESYSTEM AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PITOT HEAT",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FOLDING WING LEFT PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FOLDING WING RIGHT PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CANOPY OPEN",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TAILHOOK POSITION",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EXIT OPEN",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "STALL HORN AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ENGINE MIXURE AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CARB HEAT AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SPOILER AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS TAIL DRAGGER",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STROBES AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOE BRAKES AVAILABLE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PUSHBACK STATE",
+    "Unit": "Enum",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL MASTER BATTERY",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL TOTAL LOAD AMPS",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL BATTERY LOAD",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL BATTERY VOLTAGE",
+    "Unit": "Volts",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL MAIN BUS VOLTAGE",
+    "Unit": "Volts",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL MAIN BUS AMPS",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL AVIONICS BUS VOLTAGE",
+    "Unit": "Volts",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL AVIONICS BUS AMPS",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL HOT BATTERY BUS VOLTAGE",
+    "Unit": "Volts",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL HOT BATTERY BUS AMPS",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL BATTERY BUS VOLTAGE",
+    "Unit": "Volts",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL BATTERY BUS AMPS",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL GENALT BUS VOLTAGE",
+    "Unit": "Volts",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "ELECTRICAL GENALT BUS AMPS",
+    "Unit": "Amperes",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "CIRCUIT GENERAL PANEL ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT FLAP MOTOR ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT GEAR MOTOR ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT AUTOPILOT ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT AVIONICS ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT PITOT HEAT ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT PROP SYNC ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT AUTO FEATHER ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT AUTO BRAKES ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT STANDY VACUUM ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT MARKER BEACON ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT GEAR WARNING ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CIRCUIT HYDRAULIC PUMP ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HYDRAULIC PRESSURE",
+    "Unit": "Pound force per square foot",
+    "Settable": false,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "HYDRAULIC RESERVOIR PERCENT",
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "HYDRAULIC SYSTEM INTEGRITY",
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCTURAL DEICE SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL WEIGHT",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MAX GROSS WEIGHT",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EMPTY WEIGHT",
+    "Unit": "Pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS USER SIM",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SIM DISABLED",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "G FORCE",
+    "Unit": "GForce",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC HEAVY",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AUTO COORDINATION",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "REALISM",
+    "Unit": "Number",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TRUE AIRSPEED SELECTED",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DESIGN SPEED VS0",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DESIGN SPEED VS1",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DESIGN SPEED VC",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MIN DRAG VELOCITY",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ESTIMATED CRUISE SPEED",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CG PERCENT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CG PERCENT LATERAL",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS SLEW ACTIVE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS SLEW ALLOWED",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC SUGGESTED MIN RWY TAKEOFF",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC SUGGESTED MIN RWY LANDING",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PAYLOAD STATION WEIGHT",
+    "Unit": "Pounds",
+    "Settable": true,
+    "Indexable": true
+  },
+  {
+    "Simulation Variable": "PAYLOAD STATION COUNT",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "USER INPUT ENABLED",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TYPICAL DESCENT RATE",
+    "Unit": "Feet per minute",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VISUAL MODEL RADIUS",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CATEGORY",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SIGMA SQRT",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DYNAMIC PRESSURE",
+    "Unit": "Pounds per square foot",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL VELOCITY",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "AIRSPEED SELECT INDICATED OR TRUE",
+    "Unit": "Knots",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VARIOMETER RATE",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "VARIOMETER SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DESIGN SPEED VS0",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DESIGN SPEED VS1",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PRESSURE ALTITUDE",
+    "Unit": "Meters",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MAGNETIC COMPASS",
+    "Unit": "Degrees",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TURN INDICATOR RATE",
+    "Unit": "Radians per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TURN INDICATOR SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "YOKE Y INDICATOR",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "YOKE X INDICATOR",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RUDDER PEDAL INDICATOR",
+    "Unit": "Position",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BRAKE DEPENDENT HYDRAULIC PRESSURE",
+    "Unit": "foot pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PANEL ANTI ICE SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WING AREA",
+    "Unit": "Square feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WING SPAN",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BETA DOT",
+    "Unit": "Radians per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LINEAR CL ALPHA",
+    "Unit": "Per radian",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STALL ALPHA",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZERO LIFT ALPHA",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CG AFT LIMIT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CG FWD LIMIT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CG MAX MACH",
+    "Unit": "Machs",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CG MIN MACH",
+    "Unit": "Machs",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PAYLOAD STATION NAME",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELEVON DEFLECTION",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EXIT TYPE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EXIT POSX",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EXIT POSY",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EXIT POSZ",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DECISION HEIGHT",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DECISION ALTITUDE MSL",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EMPTY WEIGHT PITCH MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EMPTY WEIGHT ROLL MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EMPTY WEIGHT YAW MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "EMPTY WEIGHT CROSS COUPLED MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL WEIGHT PITCH MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL WEIGHT ROLL MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL WEIGHT YAW MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOTAL WEIGHT CROSS COUPLED MOI",
+    "Unit": "slug feet squared",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "WATER BALLAST VALVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MAX RATED ENGINE RPM",
+    "Unit": "Rpm",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FULL THROTTLE THRUST TO WEIGHT RATIO",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PROP AUTO CRUISE ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PROP ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PROP BETA MAX",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PROP BETA MIN",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PROP BETA MIN REVERSE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FUEL SELECTED TRANSFER MODE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DROPPABLE OBJECTS UI NAME",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MANUAL FUEL PUMP HANDLE",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "BLEED AIR SOURCE CONTROL",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ELECTRICAL OLD CHARGING AMPS",
+    "Unit": "Amps",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HYDRAULIC SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CONCORDE VISOR NOSE HANDLE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CONCORDE VISOR POSITION PERCENT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CONCORDE NOSE ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "REALISM CRASH WITH OTHERS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "REALISM CRASH DETECTION",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "MANUAL INSTRUMENT LIGHTS",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PITOT ICE PCT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SEMIBODY LOADFACTOR Y",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SEMIBODY LOADFACTOR YDOT",
+    "Unit": "Per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "RAD INS SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SIMULATED RADIUS",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STRUCTURAL ICE PCT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ARTIFICIAL GROUND ELEVATION",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SURFACE INFO VALID",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SURFACE CONDITION",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PUSHBACK ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PUSHBACK CONTACTX",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PUSHBACK CONTACTY",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PUSHBACK CONTACTZ",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PUSHBACK WAIT",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "YAW STRING ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "YAW STRING PCT EXTENDED",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "INDUCTOR COMPASS PERCENT DEVIATION",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "INDUCTOR COMPASS HEADING REF",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ANEMOMETER PCT RPM",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ROTOR ROTATION ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DISK PITCH ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DISK BANK ANGLE",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DISK PITCH PCT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DISK BANK PCT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "DISK CONING PCT",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV VOR LLAF64",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "NAV GS LLAF64",
+    "Unit": "SIMCONNECT_DATA_LATLONALT",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STATIC CG TO GROUND",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "STATIC PITCH",
+    "Unit": "Radians",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CRASH SEQUENCE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CRASH FLAG",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOW RELEASE HANDLE",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TOW CONNECTION",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "APU PCT RPM",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "APU PCT STARTER",
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "APU VOLTS",
+    "Unit": "Volts",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "APU GENERATOR SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "APU GENERATOR ACTIVE",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "APU ON FIRE DETECTED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PRESSURIZATION CABIN ALTITUDE",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PRESSURIZATION CABIN ALTITUDE GOAL",
+    "Unit": "Feet",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PRESSURIZATION CABIN ALTITUDE RATE",
+    "Unit": "Feet per second",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PRESSURIZATION PRESSURE DIFFERENTIAL",
+    "Unit": "foot pounds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "PRESSURIZATION DUMP SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FIRE BOTTLE SWITCH",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "FIRE BOTTLE DISCHARGED",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CABIN NO SMOKING ALERT SWITCH",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "CABIN SEATBELTS ALERT SWITCH",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPWS WARNING",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPWS SYSTEM ACTIVE",
+    "Unit": "Bool",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS LATITUDE LONGITUDE FREEZE ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS ALTITUDE FREEZE ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "IS ATTITUDE FREEZE ON",
+    "Unit": "Bool",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC TYPE",
+    "Unit": "String64",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC MODEL",
+    "Unit": "String64",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC ID",
+    "Unit": "String64",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC AIRLINE",
+    "Unit": "String64",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ATC FLIGHT NUMBER",
+    "Unit": "String8",
+    "Settable": true,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TITLE",
+    "Unit": "Variable length string",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "HSI STATION IDENT",
+    "Unit": "String8",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH AIRPORT ID",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH APPROACH ID",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "GPS APPROACH TRANSITION ID",
+    "Unit": "String",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ABSOLUTE TIME",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZULU TIME",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZULU DAY OF WEEK",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZULU DAY OF MONTH",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZULU MONTH OF YEAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZULU DAY OF YEAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "ZULU YEAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LOCAL TIME",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LOCAL DAY OF WEEK",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LOCAL DAY OF MONTH",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LOCAL MONTH OF YEAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LOCAL DAY OF YEAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "LOCAL YEAR",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TIME ZONE OFFSET",
+    "Unit": "Seconds",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "TIME OF DAY",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "SIMULATION RATE",
+    "Unit": "Number",
+    "Settable": false,
+    "Indexable": false
+  },
+  {
+    "Simulation Variable": "UNITS OF MEASURE",
+    "Unit": "Enum",
+    "Settable": false,
+    "Indexable": false
+  }
+]

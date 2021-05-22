@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 3em;
+        }
+
+        li {
+            list-style: none;
+        }
+
+            li a {
+                font-size: large;
+            }
+
+        p {
+            margin-top: 5px;
+        }
+
+        #status {
+            width: 24px;
+            height: 24px;
+            background-color: gray;
+            border-radius: 9999px;
+            margin-right: 10px;
+        }
+
+            #status.online {
+                background-color: green;
+            }
+
+            #status.offline {
+                background-color: red;
+            }
+
+        .statusContainer {
+            flex-direction: row;
+            display: flex;
+        }
+
+        #statusText {
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+
+        fetch('http://localhost:8888/api/status').then(response => response.json()).then(data => updateState(data)).catch(updateState({ SimConnection: false }));
+        function updateState(data) {
+            if (data.SimConnection) {
+                document.querySelector('#status').classList.add('online');
+                document.querySelector('#status').classList.remove('offline');
+                document.querySelector('#statusText').innerHTML = ("Connected to MSFS");
+            } else {
+                document.querySelector('#status').classList.add('offline');
+                document.querySelector('#status').classList.remove('online');
+                document.querySelector('#statusText').innerHTML = ("Not connected to MSFS");
+
+
+            }
+        }
+
+    </script>
+    <div class="statusContainer">
+        <div id="status"></div>
+        <div id="statusText"></div>
+    </div>
+    <h1>API Endpoints</h1>
+    <h2>GET</h2>
+    <ul>
+        <li><a href="/api/clients">/api/clients</a></li>
+        <p>
+            Returns all the clients.
+        </p>
+        <li><a href="/api/config">/api/config</a></li>
+        <p>
+            Returns config.
+        </p>
+        <li><a href="/api/status">/api/status</a></li>
+        <p>
+            Returns status of the simulator and LearsimServer.
+        </p>
+    </ul>
+    <h2>POST</h2>
+    <ul>
+        <li><a href="/api/clients">/api/clients</a></li>
+        <p>
+            Add a client.
+        </p>
+    </ul>
+    <h2>PATCH</h2>
+    <ul>
+        <li><a href="/api/clients">/api/clients</a></li>
+        <p>
+            Change details of client.
+        </p>
+        <li><a href="/api/config">/api/config</a></li>
+        <p>
+            Change the config.
+        </p>
+    </ul>
+    <h2>DELETE</h2>
+    <ul>
+        <li><a href="/api/clients">/api/clients</a></li>
+        <p>
+            Delete a client
+        </p>
+
+    </ul>
+
+</body>
+
+</html>

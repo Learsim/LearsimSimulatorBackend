@@ -1,0 +1,116 @@
+{
+  "Port": 8888,
+  "Hostname": "*",
+  "PullingRate": 6000,
+  "StandaloneValues": [
+
+
+    {
+      "Identfier": "GPS_POSITION_LON",
+      "Index": 0
+    },
+    {
+      "Identfier": "GPS_POSITION_LAT",
+      "Index": 0
+    },
+    {
+      "Identfier": "GPS_GROUND_TRUE_HEADING",
+      "Index": 0
+    }
+  ],
+  "Clients": [
+    {
+      "ConnectionType": 0,
+      "guid": "5785f0e5-9162-4b90-966b-30bef0019639",
+      "Name": "Arduino1",
+      "Adress": "COM15",
+      "StaticPort": true,
+      "Baud": 57600,
+      "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
+      "Port": null,
+      "bindings": [
+        {
+          "SimVar": {
+            "Identfier": "AMBIENT_TEMPERATURE",
+            "Index": 0
+
+          },
+          "ValueName": "valuename",
+          "Type": 2,
+          "Input": false
+        }
+      ],
+      "Inputs": [
+        {
+          "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
+          "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "ConnectionType": 0,
+      "guid": "5785f0a5-9162-4b90-966b-30bef0019639",
+      "Name": "Arduino2",
+      "Adress": "COM11",
+      "StaticPort": true,
+      "Baud": 57600,
+      "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
+      "Port": null,
+      "bindings": [
+        
+      ],
+      "Inputs": [
+        {
+          "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
+          "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "ConnectionType": 0,
+      "guid": "5785f0b5-9162-4b90-966b-30bef0019639",
+      "Name": "Arduino3",
+      "Adress": "COM3",
+      "StaticPort": true,
+      "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
+      "Baud": 57600,
+      "Port": null,
+      "bindings": [
+        {
+          "SimVar": {
+            "Identfier": "GROUND_ALTITUDE",
+            "Index": 0
+          },
+          "ValueName": "valuename",
+          "Type": 2,
+          "Input": false
+        },{
+          "SimVar": {
+            "Identfier": "GPS_POSITION_ALT",
+            "Index": 0
+          },
+          "ValueName": "valuename",
+          "Type": 2,
+          "Input": false
+        },{
+          "SimVar": {
+            "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
+            "Index": 1
+          },
+          "ValueName": "valuename",
+          "Type": 2,
+          "Input": false
+        }
+      ],
+      "Inputs": [
+        {
+          "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
+          "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
+          "Type": 0
+        }
+      ]
+    }
+  ]
+}
