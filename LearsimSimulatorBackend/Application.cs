@@ -115,9 +115,9 @@ namespace LearsimSimulatorBackend
                 foreach (var item in ValuesToUpdate)
                 {
                     Client c = client.GetClient();
-                    if (c.bindings.Where(v => v.SimVar.Identfier.Replace("_", " ").ToLower() == item.Key.Split(':')[0].ToLower()).Count() > 0)
+                    if (c.Bindings.Where(v => v.SimVar.Identfier.Replace("_", " ").ToLower() == item.Key.Split(':')[0].ToLower()).Count() > 0)
                     {
-                        foreach (var simvar in c.bindings.Where(v => v.SimVar.Identfier.Replace("_", " ").ToLower() == item.Key.Split(':')[0].ToLower()))
+                        foreach (var simvar in c.Bindings.Where(v => v.SimVar.Identfier.Replace("_", " ").ToLower() == item.Key.Split(':')[0].ToLower()))
                         {
                             var x = item.Key.Split(':')[0].Count();
                             if (simvar.SimVar.Index == 0 && item.Key.Split(':').Count() <= 1)

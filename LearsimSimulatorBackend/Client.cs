@@ -10,14 +10,14 @@ namespace LearsimSimulatorBackend
     public class Client
     {
         public ConnectionType ConnectionType { get; set; }
-        public string guid { get; set; }
+        public string Guid { get; set; }
         public string Name { get; set; }
         public string Adress { get; set; }
         public bool StaticPort { get; set; }
         public string Description { get; set; }
         public int Baud { get; set; }
         public object Port { get; set; }
-        public Binding[] bindings { get; set; }
+        public Binding[] Bindings { get; set; }
         public Input[] Inputs { get; set; }
     }
 

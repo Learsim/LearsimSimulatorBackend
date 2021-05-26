@@ -52,7 +52,7 @@ namespace LearsimSimulatorBackend
             while (true)
             {
 
-            
+
                 HttpListenerContext context = listener.GetContext();
                 HttpListenerRequest request = context.Request;
                 HttpListenerResponse response = context.Response;
@@ -87,8 +87,8 @@ namespace LearsimSimulatorBackend
                     else if (request.RawUrl.StartsWith("/api/getValues"))
                     {
 
-                        responseString += JsonConvert.SerializeObject( CachedData.ToList());
-                        
+                        responseString += JsonConvert.SerializeObject(CachedData.ToList());
+
 
 
 
@@ -103,12 +103,32 @@ namespace LearsimSimulatorBackend
 
                     if (request.RawUrl.StartsWith("/api/clients"))
                     {
-                        response.StatusCode = 304;
-                        if (true)
+                        try
                         {
+
+                            Client client = new Client();
+                            client.Description = request.QueryString.Get("Description");
+                            client.Name = request.QueryString.Get("Name");
+                            client.Baud = Convert.ToInt32(request.QueryString.Get("Baud"));
+                            client.Guid = request.QueryString.Get("Guid");
+                            client.StaticPort = Convert.ToBoolean(request.QueryString.Get("StaticPort"));
+                            client.ConnectionType = (ConnectionType)Convert.ToInt32(request.QueryString.Get("ConnectionType"));
+                            client.Adress = request.QueryString.Get("Adress");
+                            client.Bindings = JsonConvert.DeserializeObject<Binding[]>(request.QueryString.Get("Bindings"));
+                            client.Inputs = JsonConvert.DeserializeObject<Input[]>(request.QueryString.Get("Inputs"));
+                            responseString = JsonConvert.SerializeObject(client);
+                            ArduinoConfiguration arduinoConfiguration;
+                            arduinoConfiguration = JsonConvert.DeserializeObject<ArduinoConfiguration>(request.QueryString.Get("ArduinoBinings"));
+                            Configuration.Clients.Append(client);
+                            Configuration.ArduinoConfigurations.Append(arduinoConfiguration);
+                            Configuration.SaveConfig();
                             response.StatusCode = 201;
+
                         }
-                        responseString += "OK";
+                        catch
+                        {
+                            response.StatusCode = 304;
+                        }
                     }
                     else if (request.RawUrl.StartsWith("/api/simconnect/connect"))
                     {
