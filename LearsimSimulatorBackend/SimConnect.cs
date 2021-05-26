@@ -18,7 +18,7 @@ namespace LearsimSimulatorBackend
     {
 
         public event EventHandler<Dictionary<string, string>> ValueRecived;
-        public int PullingRate = 1000;
+        public int PullingRate = 100;
         public SimvarRequest oSelectedSimvarRequest
         {
             get { return m_oSelectedSimvarRequest; }
