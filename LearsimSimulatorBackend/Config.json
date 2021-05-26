@@ -21,14 +21,14 @@
   "Clients": [
     {
       "ConnectionType": 0,
-      "guid": "5785f0e5-9162-4b90-966b-30bef0019639",
+      "Guid": "5785f0e5-9162-4b90-966b-30bef0019639",
       "Name": "Arduino1",
       "Adress": "COM15",
       "StaticPort": true,
       "Baud": 57600,
       "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
       "Port": null,
-      "bindings": [
+      "Bindings": [
         {
           "SimVar": {
             "Identfier": "AMBIENT_TEMPERATURE",
@@ -50,14 +50,14 @@
     },
     {
       "ConnectionType": 0,
-      "guid": "5785f0a5-9162-4b90-966b-30bef0019639",
+      "Guid": "5785f0a5-9162-4b90-966b-30bef0019639",
       "Name": "Arduino2",
       "Adress": "COM11",
       "StaticPort": true,
       "Baud": 57600,
       "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
       "Port": null,
-      "bindings": [
+      "Bindings": [
         
       ],
       "Inputs": [
@@ -70,14 +70,14 @@
     },
     {
       "ConnectionType": 0,
-      "guid": "5785f0b5-9162-4b90-966b-30bef0019639",
+      "Guid": "5785f0b5-9162-4b90-966b-30bef0019639",
       "Name": "Arduino3",
       "Adress": "COM3",
       "StaticPort": true,
       "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
       "Baud": 57600,
       "Port": null,
-      "bindings": [
+      "Bindings": [
         {
           "SimVar": {
             "Identfier": "GROUND_ALTITUDE",

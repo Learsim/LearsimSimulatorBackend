@@ -16,9 +16,9 @@ namespace LearsimSimulatorBackend
         public int Port { get; set; }
         public int PullingRate { get; set; }
         public string Hostname { get; set; }
-        public Client[] Clients { get; set; }
-        public SimVarBinding[] StandaloneValues { get; set; }
-    
+        public List<Client> Clients { get; set; }
+        public List<SimVarBinding> StandaloneValues { get; set; }
+        public List<ArduinoConfiguration> ArduinoConfigurations { get; set; }
         public void SetPort(int port)
         {
             Port = port;
