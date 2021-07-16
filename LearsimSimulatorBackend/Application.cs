@@ -2,29 +2,81 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Windows.Forms;
 namespace LearsimSimulatorBackend
-{
+{ /// <summary>
+  /// This is the main application class
+  /// </summary>
     public class Application
     {
-
         SimConnectHandler simConnect;
         API api;
         List<Connection> ClientConnections = new List<Connection>();
+        List<Node> Nodes = new List<Node>() { new Node("192.168.1.4","Captian Server","13253"), new Node("192.168.1.5", "Outside Server", "13253") };
         Dictionary<string, string> ValueCache;
-
+        ///<summary>
+        ///This function runs the main thread of the process
+        ///</summary>
         public void run()
         {
             Configuration configuration = LoadConfig();
-            InitClients(configuration);
             simConnect = new SimConnectHandler();
             simConnect.ValueRecived += SimConnect_ValueRecived;
-            simConnect.Connect();
-            simConnect.AddRequest(SimVars.ADF_EXT_FREQUENCY, 0);
-            simConnect.InitConfig(configuration);
-            api = new API(configuration, simConnect, ClientConnections);
+            api = new API(configuration, simConnect, ClientConnections, Nodes);
+          
+            InitClients(configuration);
+
+            
+         
+            while (true)
+            {
+                if (!simConnect.Connected)
+                {
+                    try
+                    {
+                        simConnect.Connect();
+
+                    }
+                    catch (Exception e)
+                    {
+                        if(e.GetType() == typeof(COMException))
+                        {
+                            Console.WriteLine("Is FS2020 On?");
+                        }
+                    }
+
+                    if (simConnect.Connected)
+                    {
+                        simConnect.InitConfig(configuration);
+                    }
+                };
+                foreach (Connection connection in ClientConnections.Where(c => c.IsConnected() == false))
+                {
+                    if (typeof(SerialHandler) == connection.GetType())
+                    {
+                        if (connection.GetClient().StaticPort)
+                        {
+                            connection.Connect();
+                        }
+                        else
+                        {
+                            SerialHandler serialHandler = (SerialHandler)connection;
+                            if (!serialHandler.FindSerial())
+                            {
+                                serialHandler.Config.Adress = "COM1";
+
+                            }
+
+                        }
+                    }
+                }
+                Thread.Sleep(2500);
+            }
 
         }
 
@@ -37,8 +89,25 @@ namespace LearsimSimulatorBackend
                 {
                     ClientConnections.Add(new SerialHandler(client));
                 }
+                else
+                {
+                    SerialHandler serialHandler = new SerialHandler(client);
+                    if (!serialHandler.FindSerial())
+                    {
+                        serialHandler.Config.Adress = "COM1";
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Hello World Arduino from port: " + serialHandler.Config.Adress);
+
+                    }
+                    ClientConnections.Add(serialHandler);
+
+
+
+                }
             }
-            Console.WriteLine(ClientConnections);
 
         }
 
@@ -68,7 +137,9 @@ namespace LearsimSimulatorBackend
             NotifyClients(e);
             UpdateAPICache(e.ToList());
         }
-
+        ///<summary>
+        ///Updates the cache for the API, so it does not access values from main class
+        ///</summary>
         public void UpdateAPICache(List<KeyValuePair<string, string>> lists)
         {
             if (api != null)

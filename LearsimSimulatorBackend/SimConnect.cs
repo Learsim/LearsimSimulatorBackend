@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace LearsimSimulatorBackend
 {
-
+#pragma warning disable 1591
     public class SimConnectHandler : ObservableObject
     {
 
@@ -67,7 +67,7 @@ namespace LearsimSimulatorBackend
         }
         protected virtual void OnValueRecived(Dictionary<string, string> values)
         {
-               Dictionary<string, string> ValuesToUpdate = new Dictionary<string, string>();
+            Dictionary<string, string> ValuesToUpdate = new Dictionary<string, string>();
 
             if (valueCache == null)
             {
@@ -103,7 +103,7 @@ namespace LearsimSimulatorBackend
             PullingRate = configuration.PullingRate;
             foreach (Client c in configuration.Clients)
             {
-                foreach (Binding b in c.bindings)
+                foreach (Binding b in c.Bindings)
                 {
                     AddRequest((SimVars)Enum.Parse(typeof(SimVars), b.SimVar.Identfier), b.SimVar.Index);
 
@@ -156,7 +156,7 @@ namespace LearsimSimulatorBackend
                 }
                 catch (COMException e)
                 {
-                    Console.WriteLine(e.ToString());
+                    throw e;
                     return;
                 }
                 Connected = true;
@@ -212,10 +212,10 @@ namespace LearsimSimulatorBackend
         {
             if (simConnect != null)
             {
-                /// Define a data structure
+                // Define a data structure
                 simConnect.AddToDataDefinition(_oSimvarRequest.eDef, _oSimvarRequest.sName, _oSimvarRequest.sUnits, SIMCONNECT_DATATYPE.FLOAT64, 0.0f, SimConnect.SIMCONNECT_UNUSED);
-                /// IMPORTANT: Register it with the simconnect managed wrapper marshaller
-                /// If you skip this step, you will only receive a uint in the .dwData field.
+                // IMPORTANT: Register it with the simconnect managed wrapper marshaller
+                // If you skip this step, you will only receive a uint in the .dwData field.
                 simConnect.RegisterDataDefineStruct<double>(_oSimvarRequest.eDef);
 
                 return true;
@@ -229,10 +229,10 @@ namespace LearsimSimulatorBackend
         {
             string _sOverrideSimvarRequest = simVars.ToString().Replace("_", " ") + (index.Equals(0) ? "" : ":" + index.ToString());
             string _sOverrideUnitRequest = units[Convert.ToInt32(simVars)];
-            Console.WriteLine("AddRequest");
 
             string sNewSimvarRequest = _sOverrideSimvarRequest != null ? _sOverrideSimvarRequest : ((m_iIndexRequest == 0) ? m_sSimvarRequest : (m_sSimvarRequest + ":" + m_iIndexRequest));
             string sNewUnitRequest = _sOverrideUnitRequest != null ? _sOverrideUnitRequest : m_sUnitRequest;
+
 
             SimvarRequest oSimvarRequest = new SimvarRequest
             {
@@ -244,8 +244,9 @@ namespace LearsimSimulatorBackend
 
             oSimvarRequest.bPending = !RegisterToSimConnect(oSimvarRequest);
             oSimvarRequest.bStillPending = oSimvarRequest.bPending;
-
+            if (lSimvarRequests.Where(x => x.sName == oSimvarRequest.sName).Count() > 0) return;
             lSimvarRequests.Add(oSimvarRequest);
+            Console.WriteLine($"AddRequest { oSimvarRequest.sName}");
 
             ++m_iCurrentDefinition;
             ++m_iCurrentRequest;

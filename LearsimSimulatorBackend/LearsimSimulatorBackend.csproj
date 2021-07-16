@@ -56,6 +56,8 @@
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>bin\x64\Debug\LearsimSimulatorBackend.xml</DocumentationFile>
+    <WarningsAsErrors>1591</WarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
@@ -71,14 +73,34 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Makaretu.Dns, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Makaretu.Dns.2.0.1\lib\net472\Makaretu.Dns.dll</HintPath>
+    </Reference>
+    <Reference Include="Makaretu.Dns.Multicast, Version=0.27.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Makaretu.Dns.Multicast.0.27.0\lib\net461\Makaretu.Dns.Multicast.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.FlightSimulator.SimConnect">
       <HintPath>$(MSFS_SDK)\SimConnect SDK\lib\managed\Microsoft.FlightSimulator.SimConnect.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleBase, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleBase.1.3.1\lib\net45\SimpleBase.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.IPNetwork, Version=2.1.2.0, Culture=neutral, PublicKeyToken=717343cc2c25edcf, processorArchitecture=MSIL">
+      <HintPath>..\packages\IPNetwork2.2.1.2\lib\net46\System.Net.IPNetwork.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -93,6 +115,8 @@
     <Compile Include="Configuration.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="LearVar.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="SerialHandler.cs" />
     <Compile Include="SimConnect.cs" />
     <Compile Include="Program.cs" />
@@ -102,7 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Config.json" />
+    <Content Include="Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="simvars.json" />
   </ItemGroup>
@@ -119,11 +145,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
+    <Content Include="icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>xcopy /y $(SolutionDir)$(SolutionName)\index.html  $(SolutionDir)$(SolutionName)\$(OutDir)index.html
-xcopy /y $(SolutionDir)$(SolutionName)\Config.json  $(SolutionDir)$(SolutionName)\$(OutDir)Config.json</PreBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>

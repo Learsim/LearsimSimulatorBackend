@@ -1,116 +1,181 @@
 {
-  "Port": 8888,
-  "Hostname": "*",
-  "PullingRate": 100,
-  "StandaloneValues": [
-
-
-    {
-      "Identfier": "GPS_POSITION_LON",
-      "Index": 0
-    },
-    {
-      "Identfier": "GPS_POSITION_LAT",
-      "Index": 0
-    },
-    {
-      "Identfier": "GPS_GROUND_TRUE_HEADING",
-      "Index": 0
-    }
-  ],
-  "Clients": [
-    {
-      "ConnectionType": 0,
-      "Guid": "5785f0e5-9162-4b90-966b-30bef0019639",
-      "Name": "Arduino1",
-      "Adress": "COM15",
-      "StaticPort": true,
-      "Baud": 57600,
-      "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
-      "Port": null,
-      "Bindings": [
+    "Port": 8888,
+    "PullingRate": 100,
+    "Hostname": "*",
+    "Clients": [
         {
-          "SimVar": {
+            "ConnectionType": 0,
+            "Guid": "5785f0e5-9162-4b90-966b-30bef0019639",
+            "Name": "Arduino1",
+            "Adress": "COM15",
+            "StaticPort": false,
+            "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
+            "Baud": 9600,
+            "Port": null,
+            "Bindings": [
+                {
+                    "ValueName": "valuename",
+                    "Type": 2,
+                    "Input": false,
+                    "SimVar": {
+                        "Identfier": "AMBIENT_TEMPERATURE",
+                        "Index": 0
+                    },
+                    "UpdateRate": 1
+                }
+            ],
+            "Inputs": [
+                {
+                    "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
+                    "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
+                    "Type": 0
+                }
+            ]
+        },
+        {
+            "ConnectionType": 0,
+            "Guid": "e07725e2-b602-46f7-9f91-211086849042",
+            "Name": "Arduino2",
+            "Adress": "COM11",
+            "StaticPort": false,
+            "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
+            "Baud": 9600,
+            "Port": null,
+            "Bindings": [{
+                "ValueName": "03",
+                "Type": 2,
+                "Input": false,
+                "SimVar": {
+                    "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
+                    "Index": 1
+                },
+                "UpdateRate": 1
+            }],
+            "Inputs": [
+              
+                
+            ]
+        },
+        {
+            "ConnectionType": 0,
+            "Guid": "5785f0b5-9162-4b90-966b-30bef0019639",
+            "Name": "Arduino3",
+            "Adress": "COM3",
+            "StaticPort": false,
+            "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
+            "Baud": 9600,
+            "Port": null,
+            "Bindings": [
+                
+                
+                {
+                    "ValueName": "03",
+                    "Type": 2,
+                    "Input": false,
+                    "SimVar": {
+                        "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
+                        "Index": 1
+                    },
+                    "UpdateRate": 1
+                }
+            ],
+            "Inputs": [
+                {
+                    "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
+                    "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
+                    "Type": 0
+                }
+            ]
+        }
+    ],
+    "StandaloneValues": [
+        {
+            "Identfier": "GPS_POSITION_LON",
+            "Index": 0
+        },
+        {
+            "Identfier": "AMBIENT_PRECIP_STATE",
+            "Index": 0
+        },
+        {
+            "Identfier": "AMBIENT_PRESSURE",
+            "Index": 0
+        },
+        {
+            "Identfier": "FUEL_TANK_LEFT_MAIN_CAPACITY",
+            "Index": 0
+        },
+        {
+            "Identfier": "FUEL_TANK_LEFT_MAIN_QUANTITY",
+            "Index": 0
+        },
+        {
+            "Identfier": "FUEL_TANK_RIGHT_MAIN_CAPACITY",
+            "Index": 0
+        },
+        {
+            "Identfier": "FUEL_TANK_RIGHT_MAIN_QUANTITY",
+            "Index": 0
+        },
+        {
+            "Identfier": "ATTITUDE_INDICATOR_PITCH_DEGREES",
+            "Index":0
+        }, 
+        {
+            "Identfier": "ATTITUDE_INDICATOR_BANK_DEGREES",
+            "Index":0
+        },
+        {
             "Identfier": "AMBIENT_TEMPERATURE",
             "Index": 0
-
-          },
-          "ValueName": "valuename",
-          "Type": 2,
-          "Input": false
-        }
-      ],
-      "Inputs": [
-        {
-          "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
-          "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
-          "Type": 0
-        }
-      ]
-    },
-    {
-      "ConnectionType": 0,
-      "Guid": "5785f0a5-9162-4b90-966b-30bef0019639",
-      "Name": "Arduino2",
-      "Adress": "COM11",
-      "StaticPort": true,
-      "Baud": 57600,
-      "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
-      "Port": null,
-      "Bindings": [
-        
-      ],
-      "Inputs": [
-        {
-          "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
-          "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
-          "Type": 0
-        }
-      ]
-    },
-    {
-      "ConnectionType": 0,
-      "Guid": "5785f0b5-9162-4b90-966b-30bef0019639",
-      "Name": "Arduino3",
-      "Adress": "COM3",
-      "StaticPort": true,
-      "Description": "Information om denna klient t.ex. vart den befinner sig eller vad funktion den har",
-      "Baud": 57600,
-      "Port": null,
-      "Bindings": [
-        {
-          "SimVar": {
-            "Identfier": "GROUND_ALTITUDE",
+        }, {
+            "Identfier": "GPS_APPROACH_TIMEZONE_DEVIATION",
             "Index": 0
-          },
-          "ValueName": "valuename",
-          "Type": 2,
-          "Input": false
-        },{
-          "SimVar": {
-            "Identfier": "GPS_POSITION_ALT",
+        },
+        {
+            "Identfier": "AMBIENT_VISIBILITY",
             "Index": 0
-          },
-          "ValueName": "valuename",
-          "Type": 2,
-          "Input": false
-        },{
-          "SimVar": {
-            "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
+        },
+        {
+            "Identfier": "AMBIENT_WIND_DIRECTION",
+            "Index": 0
+        },
+        {
+            "Identfier": "AMBIENT_WIND_VELOCITY",
+            "Index": 0
+        },
+        {
+            "Identfier": "SEA_LEVEL_PRESSURE",
+            "Index": 0
+        },
+        {
+            "Identfier": "GPS_POSITION_LAT",
+            "Index": 0
+        },
+        {
+            "Identfier": "GPS_GROUND_TRUE_HEADING",
+            "Index": 0
+        },
+        {
+            "Identfier": "LIGHT_LANDING_ON",
+            "Index": 2
+        },
+        {
+            "Identfier": "LIGHT_LANDING_ON",
+            "Index": 3
+        },
+        {
+            "Identfier": "LIGHT_WING_ON",
+            "Index": 0
+        },
+        {
+            "Identfier": "LIGHT_WING_ON",
             "Index": 1
-          },
-          "ValueName": "valuename",
-          "Type": 2,
-          "Input": false
-        }
-      ],
-      "Inputs": [
+        },
         {
-          "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
-          "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
-          "Type": 0
+            "Identfier": "LIGHT_WING_ON",
+            "Index": 2
         }
-      ]
-    }
-  ]
+    ],
+    "ArduinoConfigurations": null
 }

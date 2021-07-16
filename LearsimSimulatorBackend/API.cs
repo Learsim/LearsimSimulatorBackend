@@ -7,6 +7,8 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Makaretu.Dns;
+using System.Diagnostics;
 
 namespace LearsimSimulatorBackend
 {
@@ -15,13 +17,15 @@ namespace LearsimSimulatorBackend
         Configuration Configuration;
         SimConnectHandler SimConnection;
         List<Connection> connections;
+        List<Node> Nodes;
         public static Dictionary<SimVarBinding, string> CachedData = new Dictionary<SimVarBinding, string>();
         Thread Server;
-        public API(Configuration configuration, SimConnectHandler simConnect, List<Connection> clientConnections)
+        public API(Configuration configuration, SimConnectHandler simConnect, List<Connection> clientConnections, List<Node> nodes)
         {
             connections = clientConnections;
             SimConnection = simConnect;
             Configuration = configuration;
+            Nodes = nodes;
             Server = new Thread(new ThreadStart(StartServer));
             Server.Start();
         }
@@ -49,6 +53,10 @@ namespace LearsimSimulatorBackend
             listener.Prefixes.Add($"http://{Configuration.Hostname}:{Configuration.Port}/");
             Console.WriteLine($"Server Started at http://{ Configuration.Hostname}:{Configuration.Port}/");
             listener.Start();
+            var service = new ServiceProfile("learsim.local", "learsim._api", (ushort)Configuration.Port);
+            var sd = new ServiceDiscovery();
+            sd.Advertise(service);
+
             while (true)
             {
 
@@ -68,6 +76,10 @@ namespace LearsimSimulatorBackend
                     {
                         responseString += JsonConvert.SerializeObject(connections);
                     }
+                    else if (request.RawUrl.StartsWith("/api/startSim"))
+                    {
+                        Process.Start(@"shell:AppsFolder\Microsoft.FlightSimulator_8wekyb3d8bbwe!App");
+                    }
                     else if (request.RawUrl.StartsWith("/api/status"))
                     {
                         responseString = "{\"SimConnection\":" + SimConnection.Connected.ToString().ToLower() + "}";
@@ -78,6 +90,11 @@ namespace LearsimSimulatorBackend
                         responseString = JsonConvert.SerializeObject(Configuration);
 
                     }
+                    else if (request.RawUrl.StartsWith("/api/nodes"))
+                    {
+                        responseString = JsonConvert.SerializeObject(Nodes);
+
+                    }
                     else if (request.RawUrl.StartsWith("/api/getEnums"))
                     {
                         responseString += JsonConvert.SerializeObject(Enum.GetNames(typeof(SimVars)));
@@ -86,8 +103,11 @@ namespace LearsimSimulatorBackend
                     }
                     else if (request.RawUrl.StartsWith("/api/getValues"))
                     {
-
+                        responseString += "{\"SimVars\":";
                         responseString += JsonConvert.SerializeObject(CachedData.ToList());
+                        responseString += $",\"LearVars\":";
+                        responseString += JsonConvert.SerializeObject(new LearVar[] { new LearVar("Test", "Test"), new LearVar("Test", "0") });
+                        responseString += "}";
 
 
 
@@ -101,7 +121,7 @@ namespace LearsimSimulatorBackend
                 else if (request.HttpMethod == "POST")
                 {
 
-                    if (request.RawUrl.StartsWith("/api/clients"))
+                    if (request.RawUrl.StartsWith("/api/client"))
                     {
                         try
                         {
@@ -119,14 +139,16 @@ namespace LearsimSimulatorBackend
                             responseString = JsonConvert.SerializeObject(client);
                             ArduinoConfiguration arduinoConfiguration;
                             arduinoConfiguration = JsonConvert.DeserializeObject<ArduinoConfiguration>(request.QueryString.Get("ArduinoBinings"));
-                            Configuration.Clients.Append(client);
-                            Configuration.ArduinoConfigurations.Append(arduinoConfiguration);
+                            Configuration.Clients.Add(client);
+                            if (arduinoConfiguration.ArduinoBindings != null)
+                                Configuration.ArduinoConfigurations.Add(arduinoConfiguration);
                             Configuration.SaveConfig();
                             response.StatusCode = 201;
 
                         }
-                        catch
+                        catch (Exception e)
                         {
+                            responseString = e.ToString();
                             response.StatusCode = 304;
                         }
                     }

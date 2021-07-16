@@ -1,6 +1,6 @@
 ﻿namespace LearsimSimulatorBackend
 {
-
+#pragma warning disable 1591
     public enum DEFINITION
     {
         Dummy = 0
