@@ -43,7 +43,7 @@ namespace LearsimSimulatorBackend
         /// This is the port if it is a TCP client e.t.c.
         /// </summary>
         
-        public object Port { get; set; }
+        public string Port { get; set; }
         /// <summary>
         /// The bindings it is subscribing to 
         /// </summary>

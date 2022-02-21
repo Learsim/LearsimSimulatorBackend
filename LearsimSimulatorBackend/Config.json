@@ -41,16 +41,7 @@
             "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
             "Baud": 9600,
             "Port": null,
-            "Bindings": [{
-                "ValueName": "03",
-                "Type": 2,
-                "Input": false,
-                "SimVar": {
-                    "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
-                    "Index": 1
-                },
-                "UpdateRate": 1
-            }],
+            "Bindings": [],
             "Inputs": [
               
                 
@@ -89,10 +80,7 @@
         }
     ],
     "StandaloneValues": [
-        {
-            "Identfier": "GPS_POSITION_LON",
-            "Index": 0
-        },
+       
         {
             "Identfier": "AMBIENT_PRECIP_STATE",
             "Index": 0
@@ -153,6 +141,10 @@
             "Index": 0
         },
         {
+            "Identfier": "GPS_POSITION_LON",
+            "Index": 0
+        },
+        {
             "Identfier": "GPS_GROUND_TRUE_HEADING",
             "Index": 0
         },
@@ -175,6 +167,14 @@
         {
             "Identfier": "LIGHT_WING_ON",
             "Index": 2
+        },
+        {
+            "Identfier": "ZULU_TIME",
+            "Index": 0
+        },
+        {
+            "Identfier": "LOCAL_TIME",
+            "Index": 0
         }
     ],
     "ArduinoConfigurations": null

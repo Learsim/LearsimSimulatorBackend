@@ -190,7 +190,7 @@ namespace LearsimSimulatorBackend
                     {
                         simConnect?.RequestDataOnSimObjectType(oSimvarRequest.eRequest, oSimvarRequest.eDef, 0, m_eSimObjectType);
                         oSimvarRequest.bPending = true;
-                        //Console.WriteLine(oSimvarRequest.sName+":"+ oSimvarRequest.dValue);
+                       // Console.WriteLine(oSimvarRequest.sName+":"+ oSimvarRequest.dValue);
                         Values.Add(oSimvarRequest.sName, oSimvarRequest.dValue.ToString());
 
                     }
