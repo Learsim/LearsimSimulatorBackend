@@ -15,11 +15,19 @@ namespace LearsimSimulatorBackend
         private IPAddress Adress;
         private TcpClient tcpClient;
         private Client Config;
+        
         public override void Connect()
         {
-            IPEndPoint endPoint = new IPEndPoint(Adress, Port);
-            tcpClient.Connect(endPoint);
+            if (IsConnected())
+            {
+                return;
+            }
             
+            IPEndPoint endPoint = new IPEndPoint(Adress, Port);
+            tcpClient = new TcpClient("192.168.0.165", 12511);
+            Console.WriteLine($"Open connection to {Config.Name}");
+            SimVarMessage[] data = { new SimVarMessage("GENERAL ENG THROTTLE LEVER POSITION", 1, "test") };
+            SendData(data);
         }
 
         public override Client GetClient()
@@ -29,13 +37,19 @@ namespace LearsimSimulatorBackend
 
         public override bool IsConnected()
         {
-            return tcpClient.Connected;
+            if (tcpClient != null) {
+                return tcpClient.Connected;
+            }
+            return false;
+        }
+        public bool IsOpen()
+        {
+            return IsConnected();
         }
         public TCPHandler(Client clientconfig)
         {
             Int32.TryParse(clientconfig.Port,out Port);
             Adress = IPAddress.Parse(clientconfig.Adress);
-            tcpClient = new TcpClient();
             Config = clientconfig;
 
         }

@@ -33,15 +33,24 @@
             ]
         },
         {
-            "ConnectionType": 0,
+            "ConnectionType": 1,
             "Guid": "e07725e2-b602-46f7-9f91-211086849042",
             "Name": "Arduino2",
-            "Adress": "COM11",
+            "Adress": "192.168.0.165",
             "StaticPort": false,
             "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
             "Baud": 9600,
-            "Port": null,
-            "Bindings": [],
+            "Port": "12511",
+            "Bindings": [ {
+                "ValueName": "03",
+                "Type": 2,
+                "Input": false,
+                "SimVar": {
+                    "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
+                    "Index": 1
+                },
+                "UpdateRate": 1
+            }],
             "Inputs": [
               
                 

@@ -75,6 +75,7 @@ namespace LearsimSimulatorBackend
                     if (request.RawUrl.StartsWith("/api/clients"))
                     {
                         responseString += JsonConvert.SerializeObject(connections);
+                        Console.WriteLine(responseString);
                     }
                     else if (request.RawUrl.StartsWith("/api/startSim"))
                     {

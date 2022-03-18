@@ -74,6 +74,12 @@ namespace LearsimSimulatorBackend
 
                         }
                     }
+                    else if(typeof(TCPHandler) == connection.GetType())
+                    {
+                        connection.Connect();
+                    }
+                    
+
                 }
                 Thread.Sleep(2500);
             }
@@ -107,6 +113,12 @@ namespace LearsimSimulatorBackend
 
 
                 }
+            }
+            foreach (Client client in configuration.Clients.Where(x => x.ConnectionType == ConnectionType.TCP))
+            {
+               
+                    ClientConnections.Add(new TCPHandler(client));
+                
             }
 
         }
