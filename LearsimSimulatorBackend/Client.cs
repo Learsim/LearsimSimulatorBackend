@@ -52,6 +52,11 @@ namespace LearsimSimulatorBackend
         /// The inputs it have
         /// </summary>
         public Input[] Inputs { get; set; }
+
+        /// <summary>
+        /// If the client should have a custom data handler
+        /// </summary>
+        public string CustomHandler { get; set; }
     }
     /// <summary>
     /// A binding for the client, that the connectionhandler sends to the client

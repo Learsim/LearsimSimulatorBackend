@@ -3,90 +3,79 @@
     "PullingRate": 100,
     "Hostname": "*",
     "Clients": [
-        {
-            "ConnectionType": 0,
-            "Guid": "5785f0e5-9162-4b90-966b-30bef0019639",
-            "Name": "Arduino1",
-            "Adress": "COM15",
-            "StaticPort": false,
-            "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
-            "Baud": 9600,
-            "Port": null,
-            "Bindings": [
-                {
-                    "ValueName": "valuename",
-                    "Type": 2,
-                    "Input": false,
-                    "SimVar": {
-                        "Identfier": "AMBIENT_TEMPERATURE",
-                        "Index": 0
-                    },
-                    "UpdateRate": 1
-                }
-            ],
-            "Inputs": [
-                {
-                    "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
-                    "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
-                    "Type": 0
-                }
-            ]
-        },
+      
+           
         {
             "ConnectionType": 1,
             "Guid": "e07725e2-b602-46f7-9f91-211086849042",
             "Name": "Arduino2",
-            "Adress": "192.168.0.165",
+            "Adress": "192.168.86.33",
             "StaticPort": false,
             "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
             "Baud": 9600,
             "Port": "12511",
-            "Bindings": [ {
-                "ValueName": "03",
-                "Type": 2,
-                "Input": false,
-                "SimVar": {
-                    "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
-                    "Index": 1
-                },
-                "UpdateRate": 1
-            }],
-            "Inputs": [
-              
-                
-            ]
-        },
-        {
-            "ConnectionType": 0,
-            "Guid": "5785f0b5-9162-4b90-966b-30bef0019639",
-            "Name": "Arduino3",
-            "Adress": "COM3",
-            "StaticPort": false,
-            "Description": "Information om denna klient t.ex. vart den befinner sig eller vad för funktion den har",
-            "Baud": 9600,
-            "Port": null,
             "Bindings": [
-                
-                
                 {
-                    "ValueName": "03",
-                    "Type": 2,
+                    "ValueName": "00",
+                    "Type": 4,
                     "Input": false,
                     "SimVar": {
-                        "Identfier": "GENERAL_ENG_THROTTLE_LEVER_POSITION",
-                        "Index": 1
+                        "Identfier": "ZULU_TIME",
+                        "Index": 0
+                    },
+                    "UpdateRate": 1
+                },
+
+                {
+                    "ValueName": "01",
+                    "Type": 4,
+                    "Input": false,
+                    "SimVar": {
+                        "Identfier": "LOCAL_TIME",
+                        "Index": 0
+                    },
+                    "UpdateRate": 1
+                },
+                {
+                    "ValueName": "YEAR",
+                    "Type": 4,
+                    "Input": false,
+                    "SimVar": {
+                        "Identfier": "LOCAL_YEAR",
+                        "Index": 0
+                    },
+                    "UpdateRate": 1
+                },
+                {
+                    "ValueName": "MONTH",
+                    "Type": 4,
+                    "Input": false,
+                    "SimVar": {
+                        "Identfier": "LOCAL_MONTH_OF_YEAR",
+                        "Index": 0
+                    },
+                    "UpdateRate": 1
+                },
+                {
+                    "ValueName": "DAY",
+                    "Type": 4,
+                    "Input": false,
+                    "SimVar": {
+                        "Identfier": "LOCAL_DAY_OF_MONTH",
+                        "Index": 0
                     },
                     "UpdateRate": 1
                 }
+
+
             ],
             "Inputs": [
-                {
-                    "Key": "TAKEOFF_ASSIST_ARM_TOGGLE",
-                    "Identfier": "TAKEOFF_ASSIST_ARM_TOGGLE",
-                    "Type": 0
-                }
-            ]
+
+
+            ],
+            "CustomHandler": "Clock"
         }
+       
     ],
     "StandaloneValues": [
        
